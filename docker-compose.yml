@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+
+  genetic-variant:
+    container_name: genetic-variant
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "${PORT}:8080"
+    environment:
+      - GENETIC_DATA_FILE_PATH=${GENETIC_DATA_FILE_PATH}
+      - FTP_HOST=${FTP_HOST}
+      - FTP_PATH=${FTP_PATH}
+    volumes:
+      - maven-repo:/root/.m2:Z
+
+volumes:
+  maven-repo:
+    name: maven-repo

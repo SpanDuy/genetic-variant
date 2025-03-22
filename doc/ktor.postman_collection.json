@@ -1,0 +1,53 @@
+{
+	"info": {
+		"_postman_id": "b93e8226-c4d6-4bff-85b0-e671c05fb6f1",
+		"name": "ktor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34464527",
+		"_collection_link": "https://ghhjmkl.postman.co/workspace/ghhjmkl-Workspace~a2d63794-c138-40b6-8672-4fddfad4707c/collection/34464527-b93e8226-c4d6-4bff-85b0-e671c05fb6f1?action=share&source=collection_link&creator=34464527"
+	},
+	"item": [
+		{
+			"name": "test",
+			"item": [
+				{
+					"name": "info",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/info?rac=1&lap=66926&rap=66927&refkey=AG",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"info"
+							],
+							"query": [
+								{
+									"key": "rac",
+									"value": "1"
+								},
+								{
+									"key": "lap",
+									"value": "66926"
+								},
+								{
+									"key": "rap",
+									"value": "66927"
+								},
+								{
+									"key": "refkey",
+									"value": "AG"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
