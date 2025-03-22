@@ -36,5 +36,6 @@ out/
 .vscode/
 
 .env
-data/clinvar.vcf.gz**
+/data/*
+!/data/.gitkeep
 target
